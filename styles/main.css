@@ -1,0 +1,293 @@
+html{
+	background-color: white;
+}
+
+
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	width: 99%;
+	max-width: 960px;
+	margin: 0 auto;
+	border: solid 3px #931420;
+	background-color: #fffded;
+
+}
+/* the styles for the header */
+header{
+	border-bottom-style: solid;
+	border-width: 3px;
+	border-color: #931420;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	background-image: -webkit-repeating-linear-gradient(30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 70%, #f6bb73 100%);
+}
+
+header img {
+	float: left;
+	padding-left: 3.75%;
+	padding-right: 3.75%;
+}
+
+header h2 {
+	font-size: 170%;
+	color: #800000;
+}
+
+header h3 em {
+	font-size: 130%;
+	font-style: italic;
+	text-shadow: 2px 2px 5px #800000;
+}
+
+#nav_menu ul{
+	list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+
+}
+
+#nav_menu ul li{
+	float: left;
+}
+
+#nav_menu ul li ul {
+	display: none;
+	position: absolute;
+	list-style: none;
+}
+
+#nav_menu ul li ul li {
+	float: none;
+}
+
+#nav_menu ul li.lastitem:hover{
+	font-style: italic;
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+	width: 100%;
+}
+
+#nav_menu ul > ul::after{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+#nav_menu ul li {
+	display: block;
+	width: 20%;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+
+#nav_menu ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+#nav_menu ul li a.current{
+	color: yellow;
+}
+
+/* the styles for the section */
+main {
+	clear: left;
+	border-bottom-style: solid;
+	border-width: 3px;
+	border-color: #931420;
+}
+
+main h3 {
+	font-size: 105%;
+	padding-bottom: 0.25em;
+}
+
+main ul {
+	padding-bottom: 0.25em;
+	padding-left: 1.25em;
+	list-style-type: circle;
+}
+
+main li {
+	padding-bottom: 0.35em;
+}
+
+main a:hover {
+	font-style: italic;
+}
+
+main a:focus {
+	font-style: italic;
+}
+
+main p {
+	padding-bottom: 0.25em;
+}
+
+main blockquote {
+	padding-left: 2em;
+	padding-right: 2em;
+	font-style: italic;
+}
+
+
+section {
+	width: 65.625%;
+	float: right;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	padding-bottom: 20px;
+}
+
+section h1 {
+	font-size: 150%;
+	padding-top: 0.5em;
+	padding-bottom: 0.25em;
+	margin: 0;
+}
+
+section h2 {
+	font-size: 130%;
+	color: #800000;
+	padding-top: 0;
+	padding-bottom: 0.25em;
+}
+
+article {
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	border-bottom-style: solid;
+	border-top-style: solid;
+	border-width: 2px;
+	border-color: #800000;
+
+}
+
+section article img{
+	float: right;
+	max-width: 40%;
+	min-width: 150px;
+	margin-left: 50px;
+	margin-top: -10px;
+	margin-bottom: 20px;
+	border: 1px solid black;
+}
+
+section article h2 {
+	margin-top: 1px;
+	padding-bottom: 0;
+}
+
+sectionn article h3 {
+	font-size: 105%;
+	margin-top: -10px;
+	padding-bottom: 0.25em;
+}
+
+section article p {
+	padding-bottom: 0;
+	margin-top: -10px;
+	margin-bottom: 5px;
+	padding-top: 0;
+
+}
+
+
+aside {
+	width: 26.875%;
+	float: left;
+	padding-left: 2.5%;
+	padding-bottom: 20px;
+}
+
+aside img{
+	padding-bottom: 1em;
+}
+
+aside h2 {
+	font-size: 130%;
+	color: #800000;
+	padding-top: 0;
+	padding-bottom: 0.25em;
+}
+
+
+/* the styles for the footer */
+footer {
+	background-color: #931420;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	clear: left;
+}
+
+footer p {
+	text-align: center;
+	color: #fffded;
+
+}
+
+
+#mobile_menu {
+	display: none;
+}
+
+
+@media only screen and (max-width: 959px) {
+	section h1 {
+		font-size: 135%;
+	}
+	section h2 {
+		font-size: 120%;
+	}
+	aside h2 {
+		font-size: 120%;
+	}
+}
+@media only screen and (max-width: 767px){
+	header img {
+		clear: left;
+	}
+	header {
+		text-align: center;
+	}
+	section {
+		clear: right;
+		width: 95%;
+	}
+	section article img {
+		width: 30%;
+	}
+	aside {
+		clear: left;
+		padding-right: 2.5%;
+		width: 95%;
+	}
+	aside div {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #800000 !important;
+	}
+}
+@media only screen and (max-width: 479px) {
+	body {
+		font-size: 90%;
+	}
+}
